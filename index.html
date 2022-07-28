@@ -5,16 +5,313 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eduprix</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
-      <h1>Eduprix</h1>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand navbar-custom-brand" href="#">Edu Prix</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item me-5">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link" href="#">Courses</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link" href="#">Deals</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link" href="#">Success</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Register</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <button class="btn btn-outline-info" type="submit">
+                Register
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- slider/carousel -->
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div
+                id="carouselExampleDark"
+                class="carousel carousel-dark slide"
+                data-bs-ride="carousel"
+              >
+                <!-- <div class="carousel-indicators">
+									<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+									<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+									<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+								</div> -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="images/cover/cover-1.png"
+                      class="d-block w-100 rounded-3"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>
+                        Some representative placeholder content for the first
+                        slide.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="images/cover/cover-2.jpg"
+                      class="d-block w-100 rounded-3"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>
+                        Some representative placeholder content for the second
+                        slide.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/cover/cover-3.jpg"
+                      class="d-block w-100 rounded-3"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>
+                        Some representative placeholder content for the third
+                        slide.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Courses -->
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center mb-5">
+              <h1>Discover Our Popular Courses</h1>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable<br />
+                content of a page when looking at its layout.
+              </p>
+            </div>
+          </div>
+
+          <div class="row gx-4 gy-2">
+            <div class="col-12 col-lg-6">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/course/course-1.png"
+                      class="img-fluid courses-img rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h3 class="card-title">Fundamental Of UI/UX Design</h3>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card.
+                      </p>
+                      <p class="text-info">Price : 20$</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/course/course-2.png"
+                      class="img-fluid courses-img rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h3 class="card-title">Fundamental Of UI/UX Design</h3>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card.
+                      </p>
+                      <p class="text-info">Price : 20$</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/course/course-3.png"
+                      class="img-fluid courses-img rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h3 class="card-title">Fundamental Of UI/UX Design</h3>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card.
+                      </p>
+                      <p class="text-info">Price : 20$</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/course/course-4.png"
+                      class="img-fluid courses-img rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h3 class="card-title">Fundamental Of UI/UX Design</h3>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card.
+                      </p>
+                      <p class="text-info">Price : 20$</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/course/course-5.png"
+                      class="img-fluid courses-img rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h3 class="card-title">Fundamental Of UI/UX Design</h3>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card.
+                      </p>
+                      <p class="text-info">Price : 20$</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/course/course-6.png"
+                      class="img-fluid courses-img rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h3 class="card-title">Fundamental Of UI/UX Design</h3>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card.
+                      </p>
+                      <p class="text-info">Price : 20$</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
